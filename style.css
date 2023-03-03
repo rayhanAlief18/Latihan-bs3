@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Playfair+Display:ital,wght@1,579&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dela+Gothic+One&family=Playfair+Display:ital,wght@1,579&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dela+Gothic+One&family=Playfair+Display:ital,wght@1,579&family=Poppins:ital,wght@0,100;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dela+Gothic+One&family=Playfair+Display:ital,wght@1,579&family=Poppins:ital,wght@0,100;1,400&family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dela+Gothic+One&family=Odor+Mean+Chey&family=Playfair+Display:ital,wght@0,400;1,579&family=Poppins:ital,wght@0,100;1,400&family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dela+Gothic+One&family=Lora&family=Odor+Mean+Chey&family=Playfair+Display:ital,wght@0,400;1,579&family=Poppins:ital,wght@0,100;1,400&family=Rubik+Mono+One&display=swap');
+/*--desktop view--*/
+html{
+    user-select: none;
+}
+    .background{
+        background-color: #f3ca56;
+        width: 100%;
+        /* min-height: 1840px;revisi */
+    }
+    .nav-item::after:hover {
+        content: "";
+        border-bottom: 2px solid white;
+    }
+    .nav-color{
+        background-color: #36393e;
+    }
+    .logo{
+        animation: logo 1.4s infinite ;
+    }
+    @keyframes logo{
+        5% { transform: rotate(10deg);}
+        10% {transform: rotate(-10deg);}
+        15% {transform: rotate(10deg);}
+        20% {transform: rotate(0deg);}
+    }
+    .style-model{
+        background-color: #EEEDDE;
+        border-top-left-radius: 20px;
+    }
+    .style-model-2{
+        background-color: #3C4245; 
+        border-top-right-radius: 20px;
+    }
+   .model{
+    width: 107%;
+    background-color:transparent;
+    margin-left: -13.5px;
+   }
+   .playfair{
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Lora', serif;
+    font-size: 5rem;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    transform: translateY(80%);
+   }
+   .support{
+    font-family: 'Playfair Display', serif;
+    color: white;
+    transform: translateY(100%);
+   }
+   .halo{
+       margin-top:-10%;
+   }
+   
+    .imgjum{
+        margin-top: -35px;
+        margin-left: -260px;
+    }
+    .navbar-link{
+        font-size: 0px;
+    }
+    .backmodel{
+        background-image: url('img/blobob.svg');
+        margin-left:0px;
+        padding-top: 55px;
+        width: 100%;
+        background-repeat: no-repeat;
+    }
+    .item{
+        margin-top:0%;
+        width: 150px;
+    }
+    /* .newbrand{
+        margin-top: 50%;
+        font-family: 'Dela Gothic One', cursive;
+        text-decoration: underline;
+        margin-left: -100px;
+        margin-bottom: -20px
+    }
+    .lead{
+        margin-right: 0px;
+        margin-left:-70px ;
+        font-family: 'Dela Gothic One', cursive;
+        text-align: center;
+        font-size: 4rem;
+    } */
+    .carousel-control-prev-icon{
+        background-color: black;
+    }
+    .carousel-control-next-icon{
+        background-color: black;
+    }
+
+    .shop{
+        border-radius: 10px;
+        border-bottom: 10px;
+    }
+
+    .info{
+        margin-top: -30px;
+    }
+
+    /* detail */
+   
+   
+    .image{
+        padding-top:20px ;
+        box-sizing: border-box;
+        position: relative;
+        top: 30px;
+        left:35px;
+    }
+    .desc{
+        top:10%;
+        position: relative;
+        display: flex;
+        padding:10px 20px;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .name{
+        display: flex;
+        flex-direction:column ;
+    }
+
+    .price{
+        color: black;
+        font-weight: 700;
+        font-family: 'Dela Gothic One', cursive;
+        letter-spacing: 1.8px;
+        
+        font-size: 1rem;
+    }
+    
+
+
+  /*   .judul{
+        font-family: 'Courgette', cursive;
+        font-size: 70px;
+        margin-top: 100px;
+        letter-spacing: 4px;
+    } */
+
+    .box{
+        position: relative;
+        background-color:#fff;
+        border-radius: 10px;
+        box-shadow: 2px 2px 30px rgba(0,0,0,0.3);
+        height: 440px;
+    }
+    .box::before{
+        content: "Nice Choice";
+        margin-top: 15px;
+        font-family: 'Rubik Mono One', sans-serif;
+        font-style: italic;
+        font-size: 1.1rem;
+        position: absolute;       
+        opacity: 0;
+        top: 20px;
+        left: 10px;
+        transition: 0.5s;
+    }
+    .box:hover::before{
+        left: 50%;
+        transform: translate(-50%,0);
+        opacity: 1;
+    }
+    .judul{
+        text-align: center;
+        position: relative;
+        right: 70%;
+        opacity: 0;
+        transition: .5s;
+        /* animation: slider 1s forwards; */
+     }
+    .box:hover .judul{
+        right: 0;
+        opacity: 1;
+     }
+    /* @keyframes slider{
+        100%{
+            opacity: 1;
+            right: 0;
+        }
+    } */
+
+    /* box 2 */
+    .harga{
+        margin-top:-12px;
+    }
+    .harga_coret{
+        text-decoration: line-through;
+        color:#737373;
+        font-size: 13px;
+    }
+    .terjual{
+        color: #737373;
+        font-size: 14px;
+            
+    }
+
+    /* detail */
+    .size{
+        display: flex;
+        gap: 2em;
+    }
+    .size li{
+        font-weight: 500;
+        list-style: none;
+
+        border: 2px solid #737373;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        opacity: 0.5; 
+    }
+
+    .size li:hover{
+        border: 2px solid;   
+        opacity: 1;
+        cursor: pointer;
+        background-color: #f3ca56;
+    }
+    
+    .sizess{
+        list-style: none;
+        display: block;
+        padding: 10px 20px;
+        
+    }
+
+    .sizess.active{
+        background-color: #f3ca56;
+        opacity: 1;
+    }
+
+    .colorpick.active{
+        opacity: 1;
+    }
+
+    .daerah:hover{
+        opacity: 1;
+    }
+
+    /* history */
+    .gbr_pembelian{
+        width: 190px;
+    }
+
+
+    /* Tampilan Tablet */
+    @media (max-width: 991.98px) {
+        .model{
+            transform: translateX(0%);
+        }
+        .playfair{
+            /* font-family: 'Playfair Display', serif; */
+            font-family: 'Lora', serif;
+            font-size: 3rem;
+            color: rgb(255, 255, 255);
+            text-align: left;
+            transform: translateY(80%);
+           }
+           .support{
+            font-family: 'Playfair Display', serif;
+            color: white;   
+            transform: translateY(50%);
+            font-size: 12px;
+           }
+
+           .halo{
+             margin-top:-22%;
+             margin-bottom: 10px;
+           }
+           .item{
+            margin-top:0%;
+            width: 90px;
+          }
+
+
+    }
+
+    /* Tampilan Hp */
+    @media (max-width: 575.98px) {
+        /* landingPage */
+        .model{
+            width: 100%;
+        }
+        .model::after{
+            content: "haloo";
+            opacity: 1;
+            position: relative;
+            margin-top: 100%;
+            font-size: 200px;
+        }
+        .playfair{
+            /* font-family: 'Playfair Display', serif; */
+            font-family: 'Lora', serif;
+            font-size: 1rem;
+            color: rgb(255, 255, 255);
+            text-align: left;
+            transform: translateY(50%);
+            text-align: center;
+           }
+           .support{
+            font-family: 'Playfair Display', serif;
+            color: white;   
+            transform: translateY(20%);
+            font-size: 12px;
+            text-align: center;
+           }
+        .style-model{
+            border-radius: 0px;
+            margin-top: -10px;
+        }
+        .style-model-2{
+            border-radius: 0px;
+        }
+        .item{
+            margin-top:0%;
+            width: 50px;
+        }
+        
+        /* detail */
+        .tb_size{
+            font-size: 10px;
+        }
+
+        .size{
+            display: flex;
+            gap: 1em;
+        }
+        .size li{
+            font-weight: 500;
+            list-style: none;
+    
+            border: 2px solid #737373;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            opacity: 0.5; 
+        }
+        
+        .colorpick{
+            width: 29%;
+        }
+
+        .input-group-prepend{
+            font-size: 1px;
+        }
+        
+        /* keranjang */
+        .tb_keranjang{
+            font-size: 10px ;
+        }
+
+        
+        /* history pembelian */
+        .gbr_pembelian{
+            width: 100px;
+        }
+        .JudulBarang{
+            font-size: 10px;
+        }
+    }
+
+    
+
+    
+    
